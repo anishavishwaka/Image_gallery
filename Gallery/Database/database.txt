@@ -1,0 +1,27 @@
+
+DATABASE NAME== images
+
+//Login Form
+CREATE TABLE `user_form` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `img` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4
+
+//images Upload
+CREATE TABLE `image`(
+   `id` int(100) NOT NULL AUTO_INCREMENT,
+   `image` varchar(100) NOT NULL,
+   `P_id` int(100) NOT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4
+
+
+//Admin 
+CREATE TABLE `admin`(
+    `Admin_name` varchar(100)NOT NULL,
+    `Admin_password` varchar(100) NOT NULL
+)

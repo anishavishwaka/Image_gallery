@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background: #eceaff;
+    color: #525252;   
+}
+h2{
+    text-align: center;
+    margin: 5px;
+    font-size: 30px;
+}
+.sub-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      grid-gap: 30px;
+      margin: 10px;
+  }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .gallery .images {
+      gap: 15px;
+      max-width: 95%;
+      margin-top: 40px;
+      columns: 5 340px;
+      list-style: none;
+    }
+    .gallery .images .card {
+      display: flex;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 14px;
+      border-radius: 4px;
+    }
+    
+    .gallery .images img {
+      width: 100%;
+      z-index: 2;
+      position: relative;
+    }
+    .images .details {
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      bottom: -100px;
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      justify-content: space-between;
+      transition: bottom 0.1s ease;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    }
+    .images li:hover .details {
+      bottom: 0;
+    }
+    .photographer {
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .photographer i {
+      font-size: 1.4rem;
+      margin-right: 10px;
+    }
+    .photographer span {
+      font-size: 1.05rem;
+    }
+    button, i {
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.2s ease;
+    }
+    .details button {
+      background: #fff;
+      font-size: 1.1rem;
+      padding: 3px 8px;
+    }
+    .details .download-btn:hover {
+      background: #f2f2f2;
+    }
+
+

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.top-bar{
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px #ccc;
+}
+i{
+    color:rgb(156, 239, 156);
+    font-size: 10px;
+    padding: 5px;    
+}
+.left{
+    padding: 10px;
+    padding-left: 70px;
+}
+.phone{
+    margin-right:20px;
+}
+select{
+    display: block;
+    width: 6%;
+    height: 4vh;
+    text-align: center;
+    text-transform: capitalize;
+    border: none;
+    box-shadow: 0px 2px 8px 0px #ccc;
+    margin-left: 70%;
+    margin-top: -35px;
+}
+.login{
+    background-color:white;
+    height: 4vh;
+    width: 18%;
+    float: right;
+    box-shadow: 0px 2px 2px 0px #ccc;
+    text-align: center;
+    margin-top: -24px;
+    margin-right: 10px;
+}
+ .img{
+    /*color:rgb(156, 239, 156);*/
+    height:13px;
+     width:13px;
+
+}
+/*drop-down style*/
+ul{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    display: inline-block;
+}
+.dropdown{
+    margin-left: 146px;
+    background-color: white;
+    text-align: start;
+    width: 70px;
+    display: none;
+    transition: all 1s;
+}
+span:hover ul.dropdown{
+    display: block;
+}
+span i:hover ul .dropdown{
+    display: block;
+}
+.home-page{
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content {
+    text-align: center;
+}
+.heading{
+      color: gray;
+      text-transform: capitalize;
+      font-size: 80px;
+      line-height: 60px;
+      margin-bottom: 80px;
+}
+.heading .small{
+    display: block;
+    font-size: 40px;
+}
+.heading .small1 {
+    display: block;
+    font-size: 40px;
+}
+.heading .no-fill {
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px grey ;
+}
+
+
